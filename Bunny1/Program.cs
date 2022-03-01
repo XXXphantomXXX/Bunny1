@@ -10,10 +10,6 @@ namespace Bunny1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the first number you would like to preform an operation on");
-            int NumA = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter second number you would like to preform an operation on");
-            int NumB = int.Parse(Console.ReadLine());
             Console.WriteLine("what type of operation would you like to preform?");
             string input = Console.ReadLine();
 
@@ -49,27 +45,8 @@ namespace Bunny1
             }
         }
 
-        private static void MultiplyNums()
-        {
-            throw new NotImplementedException();
-        }
 
-        private static void DivideNums()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void SubtractNums()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void AddNums()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int DivideNums(int NumA, int NumB)
+        public static void DivideNums()
         {
             Console.WriteLine("Enter first number you want to divide:");
             int NumA1 = int.Parse(Console.ReadLine());
@@ -78,11 +55,12 @@ namespace Bunny1
             
                 int result = NumA1 / NumB1;
                 Console.WriteLine(result);
-                return result;
-            
+            Console.ReadKey();
+
+
         }
 
-        public int MultiplyNums(int NumA, int NumB)
+        public static void MultiplyNums()
         {
             Console.WriteLine("Enter first number you want to Multiply:");
             int NumA1 = int.Parse(Console.ReadLine());
@@ -92,11 +70,12 @@ namespace Bunny1
 
             int result = NumA1 * NumB1;
                 Console.WriteLine(result);
-                return result;
-            
+            Console.ReadKey();
+
+
         }
 
-        public int SubtractNums(int NumA, int NumB)
+        public static void SubtractNums()
         {
             Console.WriteLine("Enter first number you want to subtract:");
             int NumA1 = int.Parse(Console.ReadLine());
@@ -106,11 +85,12 @@ namespace Bunny1
 
             int result = NumA1 - NumB1;
                 Console.WriteLine(result);
-                return result;
+            Console.ReadKey();
+                
             
         }
 
-        public int AddNums(int NumA, int NumB)
+        public static void AddNums()
         {
             Console.WriteLine("Enter first number you want to Add:");
             var NumA1 = int.Parse(Console.ReadLine());
@@ -120,7 +100,8 @@ namespace Bunny1
 
             int result = NumA1 + NumB1;
                 Console.WriteLine(result);
-                return result;
+            Console.ReadKey();
+                
             
         }
     }
